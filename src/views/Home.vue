@@ -1,8 +1,10 @@
 <template>
-    <section class="home">
-        <h1>Hello, {{ title }}</h1>
-        <button @click="clickH1">Get Started</button>
-    </section>
+    <div>
+        <section class="home">
+            <h1>Hello, {{ title }}</h1>
+            <button @click="clickH1">Get Started</button>
+        </section>
+    </div>
 </template>
 
 <script setup>
