@@ -1,4 +1,4 @@
-import HomeVue from "/src/views/Home.vue";
+import HomeVue from "../../views/Home.vue";
 
 export default {
   path: "/",

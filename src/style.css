@@ -1,6 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 :root {
-  font-family: "Helvetica", sans-serif;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -15,10 +14,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 .navbar {
   padding-block: 2.4rem;
+}
+
+p {
+  line-height: 36px;
+  font-weight: 200;
+}
+
+section {
+  margin-bottom: 3rem;
 }
 
 .navbar .container {
@@ -47,7 +59,7 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-inline: 20px;
 }
@@ -68,4 +80,5 @@ button {
 
 h1 {
   margin-bottom: 1.2rem;
+  font-weight: 500;
 }

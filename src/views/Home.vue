@@ -1,23 +1,20 @@
 <template>
-    <div class="home">
-        <h1 ref="p">Hello {{ title }}</h1>
-        <button @click="clickP">Get Started</button>
-    </div>
+    <section class="home">
+        <h1>Hello, {{ title }}</h1>
+        <button @click="clickH1">Get Started</button>
+    </section>
 </template>
 
-<script>
+<script setup>
 import { ref } from "vue"
-export default {
-    name: "Home views",
-    setup() {
-        const p = ref(null)
 
-        const title = "Agura.net"
-        const clickP = function () {
-            console.log(p)
-        }
+const title = ref("tell your name")
 
-        return { p, title, clickP }
+const clickH1 = function () {
+    const setTitle = prompt("Tell your name")
+
+    if (setTitle != undefined && setTitle.length > 0) {
+        title.value = setTitle
     }
 }
 </script>

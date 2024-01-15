@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="container">
-      <div class="nav-logo">Agura</div>
+      <div class="nav-logo">Ikiru.blog</div>
       <ul class="nav-list">
         <li class="nav-item" v-for="(item, index) in navItem" :key="index">
           <router-link :to="item.url" class="nav-link">{{ item.name }}</router-link>
@@ -30,8 +30,8 @@ export default {
           url: "/about"
         },
         {
-          name: "Project",
-          url: "/project"
+          name: "Lifecycle Vue",
+          url: "/lifecycle-vue"
         }
       ]
     }

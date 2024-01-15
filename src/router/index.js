@@ -1,13 +1,11 @@
 import aboutRouter from "./web/about-router.js";
 import homeRouter from "./web/home-router.js";
+import learnvueRouter from "./web/learnvue-router.js";
 import { createWebHistory, createRouter } from "vue-router";
-
-const routes = [];
-routes.push(homeRouter, aboutRouter);
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
+  routes: [homeRouter, aboutRouter, learnvueRouter],
   linkActiveClass: "active",
 });
 

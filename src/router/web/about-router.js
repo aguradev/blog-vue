@@ -1,4 +1,4 @@
-import AboutVue from "/src/views/About.vue";
+import AboutVue from "../../views/About.vue";
 
 export default {
   path: "/about",
