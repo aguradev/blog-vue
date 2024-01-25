@@ -41,11 +41,8 @@
             <p style="margin-bottom: 1rem;">Peoples :</p>
             <input type="text" v-model="searchPeople" style="margin-bottom: 1rem;" placeholder="Search people">
             <ul>
-                <div v-if="resultSearchPeople.length > 0">
+                <div>
                     <li v-for="(people, index) in resultSearchPeople" :key="index">{{ people }}</li>
-                </div>
-                <div v-else>
-                    <li>People not found</li>
                 </div>
             </ul>
         </section>
@@ -53,7 +50,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, computed } from "vue"
+import { ref, reactive, computed, watch, watchEffect } from "vue"
 // ref feature
 // ? merupakan sebuah atribute yang dapat menangkap sebuah property tag html dan juga dapat digunakan sebagai data reactive yang datanya dapat berubah secara realtime
 
@@ -93,7 +90,27 @@ const peoples = ref([
 
 const searchPeople = ref("")
 const resultSearchPeople = computed(() => {
-    return peoples.value.filter((value) => value.toLowerCase().includes(searchPeople.value.toLowerCase()))
+    const result = peoples.value.filter((value) => {
+        return value.toLowerCase().includes(searchPeople.value.toLowerCase())
+    })
+
+    if (result.length > 0) {
+        return result
+    }
+
+    const notFound = "People Not found"
+
+    return notFound.split()
+})
+
+// ? watch = merupakan sebuah properti yang akan aktif jika terjadi perubahan data.
+watch(searchPeople, (value) => {
+    console.log("perubahan data search :", value)
+})
+
+// ? watchEffect = berjalan secara otomatis setelah sebuah component berhasil di mount
+watchEffect(() => {
+    console.log(`input : ${searchPeople.value}`)
 })
 </script>
 
@@ -122,4 +139,5 @@ input {
     padding: 6px 16px;
     font-size: 1rem;
     outline: none;
-}</style>
+}
+</style>

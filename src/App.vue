@@ -4,7 +4,7 @@
       <div class="nav-logo">Ikiru.blog</div>
       <ul class="nav-list">
         <li class="nav-item" v-for="(item, index) in navItem" :key="index">
-          <router-link :to="item.url" class="nav-link">{{ item.name }}</router-link>
+          <router-link :to="item.meta_router" class="nav-link">{{ item.name }}</router-link>
         </li>
       </ul>
     </div>
@@ -27,15 +27,23 @@ export default {
       navItem: [
         {
           name: "Home",
-          url: "/"
+          url: "/",
+          meta_router: { name: "Home" }
         },
         {
           name: "About",
-          url: "/about"
+          url: "/about",
+          meta_router: { name: "About" }
         },
         {
           name: "Lifecycle Vue",
-          url: "/lifecycle-vue"
+          url: "/lifecycle-vue",
+          meta_router: { name: "LearnVue" }
+        },
+        {
+          name: "Fake API",
+          url: "/fake-api",
+          meta_router: { name: "FakeAPI" }
         }
       ]
     }

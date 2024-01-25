@@ -1,7 +1,8 @@
-import HomeVue from "../../views/Home.vue";
+const HomeComponent = () => import("../../views/Home.vue");
 
 export default {
   path: "/",
-  component: HomeVue,
+  name: "Home",
+  component: HomeComponent,
   meta: { title: "Home" },
 };

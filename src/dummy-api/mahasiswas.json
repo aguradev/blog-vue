@@ -1,0 +1,74 @@
+{
+    "mahasiswas": [
+        {
+            "nim": "123456789",
+            "nama": "John Doe",
+            "jurusan": "Computer Science",
+            "semester": 5,
+            "ipk": 3.75
+        },
+        {
+            "nim": "987654321",
+            "nama": "Jane Smith",
+            "jurusan": "Electrical Engineering",
+            "semester": 4,
+            "ipk": 3.9
+        },
+        {
+            "nim": "456789123",
+            "nama": "Ahmad Abdullah",
+            "jurusan": "Mechanical Engineering",
+            "semester": 6,
+            "ipk": 3.5
+        },
+        {
+            "nim": "654321789",
+            "nama": "Maria Rodriguez",
+            "jurusan": "Business Administration",
+            "semester": 7,
+            "ipk": 3.8
+        },
+        {
+            "nim": "789123456",
+            "nama": "Muhammad Ali",
+            "jurusan": "Physics",
+            "semester": 3,
+            "ipk": 3.6
+        },
+        {
+            "nim": "321789654",
+            "nama": "Aisha Khan",
+            "jurusan": "Chemistry",
+            "semester": 5,
+            "ipk": 3.7
+        },
+        {
+            "nim": "234567890",
+            "nama": "Carlos Garcia",
+            "jurusan": "Civil Engineering",
+            "semester": 8,
+            "ipk": 3.9
+        },
+        {
+            "nim": "890123456",
+            "nama": "Anna Nguyen",
+            "jurusan": "Information Technology",
+            "semester": 6,
+            "ipk": 3.85
+        },
+        {
+            "nim": "567890123",
+            "nama": "Ravi Patel",
+            "jurusan": "Chemical Engineering",
+            "semester": 4,
+            "ipk": 3.6
+        },
+        {
+            "nim": "432109876",
+            "nama": "Elena Martinez",
+            "jurusan": "Environmental Science",
+            "semester": 7,
+            "ipk": 3.7
+        }
+    ]
+}

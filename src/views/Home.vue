@@ -3,6 +3,7 @@
         <section class="home">
             <h1>Hello, {{ title }}</h1>
             <button @click="clickH1">Get Started</button>
+            <code ref="precode"></code>
         </section>
     </div>
 </template>
@@ -11,6 +12,7 @@
 import { ref } from "vue"
 
 const title = ref("tell your name")
+const precode = ref(null)
 
 const clickH1 = function () {
     const setTitle = prompt("Tell your name")
